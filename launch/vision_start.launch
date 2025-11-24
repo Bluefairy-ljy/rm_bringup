@@ -1,7 +1,7 @@
 <launch>
-   <include file="$(find rm_config)/launch/vision/camera.launch">
-        <arg name="imu_trigger" value="false"/>
-    </include>
-
+<!--   <include file="$(find rm_config)/launch/vision/camera.launch">-->
+<!--        <arg name="imu_trigger" value="false"/>-->
+<!--    </include>-->
     <include file="$(find rm_config)/launch/vision/vision_loader.launch"/>
+    <include file="$(find radar_vision)/launch/hero_radar.launch"/>
 </launch>
