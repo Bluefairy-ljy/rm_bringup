@@ -5,8 +5,8 @@ export ENEMY_COLOR=red
 ip addr show | grep -q -w '192.168.100.2/24' && export HAS_SWITCH=has || export HAS_SWITCH=no
 export ROBOT_TYPE=hero
 export IMU_TRIGGER=false
-export HW_NAME=rm_can_hw
-export LAUNCH=start
+export HW_NAME=rm_ecat_hw
+export LAUNCH=hero
 # camera
 export CAMERA_TYPE=hk_camera
 export CAMERA_CLASS=HKCameraNodelet

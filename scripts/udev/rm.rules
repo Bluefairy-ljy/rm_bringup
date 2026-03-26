@@ -8,3 +8,4 @@
 # use for ecat
 ACTION=="add",KERNELS=="3-4.2:1.0",SUBSYSTEMS=="usb",MODE:="0777",SYMLINK+="usbDbus"
 ACTION=="add",KERNELS=="3-4.1:1.0",SUBSYSTEMS=="usb",MODE:="0777",SYMLINK+="usbReferee"
+ACTION=="add", SUBSYSTEM=="tty", KERNEL=="ttyACM*", MODE="0777", SYMLINK+="usbreferee", ENV{ID_MM_DEVICE_IGNORE}="1"
